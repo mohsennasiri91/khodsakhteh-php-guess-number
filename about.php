@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>بازی حدس عدد</title>
+</head>
+
+<body>
+    <div class="game-container transparent-9">
+        <h2>
+            🎯 داستان بازی حدس عدد
+        </h2>
+        <p class="text-justify">
+            وقتی دکمه «شروع بازی» رو می‌زنی،
+            من توی ذهنم یه عدد مخفی بین ۱ تا ۱۰۰ انتخاب می‌کنم و دیگه عوضش نمی‌کنم.
+            حالا تو ۵ بار فرصت داری حدس بزنی اون عدد چیه.
+            هر بار که یه عدد وارد می‌کنی، من بهت می‌گم حدست درست بوده یا نه.
+            اگه قبل از تموم شدن ۵ تا شانس عدد رو پیدا کنی، برنده‌ای؛
+            وگرنه بازی تموم می‌شه و می‌تونی دوباره از اول شروع کنی. 🎉
+        </p>
+        <form action="./start-game.php" method="post">
+            <input type="hidden" name="game" value="start">
+            <button>شروع بازی</button>
+        </form>
+        <?php include 'floats.php' ?>
+    </div>
+</body>
+
+</html>
