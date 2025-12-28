@@ -1,6 +1,6 @@
 <?php
-include 'check-game-is-started.php';
-include 'functions.php';
+include './includes/check-game-is-started.php';
+include './includes/functions.php';
 $message = '';
 $game_ended = false;
 $success = false;
@@ -48,15 +48,9 @@ if ($game_ended == false && $hearts < 1) {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="fa">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>بازی حدس عدد</title>
-</head>
+<?php
+//////////////html start//////////////////
+include_once './includes/head.php' ?>
 
 <body>
 
@@ -97,7 +91,7 @@ if ($game_ended == false && $hearts < 1) {
         }
         ?>
     </div>
-    <?php include 'floats.php' ?>
+    <?php include_once './includes/floats.php' ?>
 
 </body>
 

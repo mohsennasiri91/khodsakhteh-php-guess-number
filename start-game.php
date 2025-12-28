@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once 'functions.php';
+include_once './includes/functions.php';
 if (isset($_POST['game'])) {
     switch ($_POST['game']) {
         case 'start':
